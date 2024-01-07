@@ -22,10 +22,10 @@
   "scripts": {
     "start:front": "react-scripts start",
     "start": "npm run build && npm run server:prod",
-    "build": "react-scripts build",
+    "build": "babel src -d lib",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
-    "test": "react-scripts test",
+    "test": "est",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
